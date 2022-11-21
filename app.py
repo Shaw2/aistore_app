@@ -13,7 +13,7 @@ def index():
 @app.route("/sregister", methods=['POST', 'GET'])
 def sregister():
     if request.method == 'POST':
-        ~
+        #~
         return redirect('/')
 
     return render_template('sregister.html')
@@ -21,7 +21,7 @@ def sregister():
 @app.route("/stores", methods=['POST', 'GET'])
 def stores():
     if request.method == 'POST':
-        ~
+        pass
 
     return render_template('stores.html', stores = show_list())
 

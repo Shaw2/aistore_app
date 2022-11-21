@@ -60,9 +60,9 @@ def create_store(s_id, s_name, locate):
 
 def show_list(s_id = None):
     if s_id is None:
-        ~
+        pass#~
     else:
-        ~
+        pass#~
 
 def search_store(s_id):
     print(s_id)
