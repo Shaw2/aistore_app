@@ -13,7 +13,13 @@ def index():
 @app.route("/sregister", methods=['POST', 'GET'])
 def sregister():
     if request.method == 'POST':
-        #~
+
+        s_id = request.form['sId']
+        s_name = request.form['sName']
+        locate = request.form['locate']
+
+        create_store(s_id, s_name, locate)
+
         return redirect('/')
 
     return render_template('sregister.html')

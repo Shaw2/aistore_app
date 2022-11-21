@@ -18,7 +18,6 @@ class AiStore:
     def set_product(self, p_id, count, price):
         pass
 
-
     def is_product(self, p_id):
         pass
     def buy_product(self, p_id, count, amount):
@@ -56,6 +55,7 @@ def create_store(s_id, s_name, locate):
 
     s_df.loc[s_id] = store
     print('{} 스토어가 생성 되었습니다.'.format(store['name']))
+    print(s_df)
 
 
 def show_list(s_id = None):
@@ -93,9 +93,6 @@ def add_product(p_id, price, count, s_id ):
 
 def update(s_id):
     pass
-
-
-
 
 def bucket(s_id, p_id, count):
     store = search_store(s_id)
