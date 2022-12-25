@@ -60,9 +60,13 @@ def create_store(s_id, s_name, locate):
 
 def show_list(s_id = None):
     if s_id is None:
-        pass#~
+#        s_id = s_df['s_id']
+        print(s_df)
+        dict_test = s_df.to_dict('records')
+        print(dict_test)
+        return dict_test
     else:
-        pass#~
+        return s_df.to_dict('records')
 
 def search_store(s_id):
     print(s_id)

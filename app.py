@@ -29,14 +29,18 @@ def stores():
     if request.method == 'POST':
         pass
 
-    return render_template('stores.html', stores = show_list())
+    return render_template('stores.html',
+                           stores = show_list())
 
 @app.route("/manage/<s_id>", methods=['POST', 'GET'])
 def manage(s_id = 'nan'):
     if request.method == 'POST':
         pass
 
-    return render_template('manage.html', s_id = s_id, )
+    return render_template('manage.html',
+                           s_id = s_id, )
+                           #inventory = ,
+                           #products = )
 
 @app.route("/board/<s_id>", methods=['POST', 'GET'])
 def board(s_id = 'nan'):
